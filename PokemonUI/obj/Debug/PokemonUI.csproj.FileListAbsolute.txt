@@ -1,0 +1,12 @@
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\bin\Debug\PokemonUI.exe.config
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\bin\Debug\PokemonUI.exe
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\bin\Debug\PokemonUI.pdb
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\obj\Debug\PokemonUI.csproj.AssemblyReference.cache
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\obj\Debug\PokemonUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Properties.Resources.resources
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\obj\Debug\PokemonUI.csproj.GenerateResource.cache
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\obj\Debug\PokemonUI.csproj.CoreCompileInputs.cache
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\obj\Debug\PokemonUI.exe
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\obj\Debug\PokemonUI.pdb
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Teams.resources
+C:\Users\kaoli\Desktop\Work\PokemonUI\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.resources
