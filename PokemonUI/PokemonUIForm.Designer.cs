@@ -60,8 +60,9 @@
             this.menuPanel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuPanel.ForeColor = System.Drawing.Color.Gainsboro;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
+            this.menuPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(335, 779);
+            this.menuPanel.Size = new System.Drawing.Size(168, 422);
             this.menuPanel.TabIndex = 0;
             // 
             // buttonsPanel
@@ -73,9 +74,10 @@
             this.buttonsPanel.Controls.Add(this.movesButton);
             this.buttonsPanel.Controls.Add(this.teamsButton);
             this.buttonsPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonsPanel.Location = new System.Drawing.Point(0, 125);
+            this.buttonsPanel.Location = new System.Drawing.Point(0, 65);
+            this.buttonsPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonsPanel.Name = "buttonsPanel";
-            this.buttonsPanel.Size = new System.Drawing.Size(335, 600);
+            this.buttonsPanel.Size = new System.Drawing.Size(168, 310);
             this.buttonsPanel.TabIndex = 7;
             // 
             // settingsButton
@@ -87,10 +89,11 @@
             this.settingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.settingsButton.ImageKey = "icons8-gear-pok-96.png";
             this.settingsButton.ImageList = this.icons;
-            this.settingsButton.Location = new System.Drawing.Point(0, 480);
+            this.settingsButton.Location = new System.Drawing.Point(0, 248);
+            this.settingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.settingsButton.Size = new System.Drawing.Size(335, 120);
+            this.settingsButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.settingsButton.Size = new System.Drawing.Size(168, 62);
             this.settingsButton.TabIndex = 4;
             this.settingsButton.Text = " Settings";
             this.settingsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -119,10 +122,11 @@
             this.pokemonButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.pokemonButton.ImageIndex = 5;
             this.pokemonButton.ImageList = this.icons;
-            this.pokemonButton.Location = new System.Drawing.Point(0, 360);
+            this.pokemonButton.Location = new System.Drawing.Point(0, 186);
+            this.pokemonButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pokemonButton.Name = "pokemonButton";
-            this.pokemonButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.pokemonButton.Size = new System.Drawing.Size(335, 120);
+            this.pokemonButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.pokemonButton.Size = new System.Drawing.Size(168, 62);
             this.pokemonButton.TabIndex = 3;
             this.pokemonButton.Text = " Pokemon";
             this.pokemonButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -139,10 +143,11 @@
             this.itemsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.itemsButton.ImageIndex = 6;
             this.itemsButton.ImageList = this.icons;
-            this.itemsButton.Location = new System.Drawing.Point(0, 240);
+            this.itemsButton.Location = new System.Drawing.Point(0, 124);
+            this.itemsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.itemsButton.Name = "itemsButton";
-            this.itemsButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.itemsButton.Size = new System.Drawing.Size(335, 120);
+            this.itemsButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.itemsButton.Size = new System.Drawing.Size(168, 62);
             this.itemsButton.TabIndex = 2;
             this.itemsButton.Text = " Items";
             this.itemsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,10 +164,11 @@
             this.movesButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.movesButton.ImageIndex = 1;
             this.movesButton.ImageList = this.icons;
-            this.movesButton.Location = new System.Drawing.Point(0, 120);
+            this.movesButton.Location = new System.Drawing.Point(0, 62);
+            this.movesButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.movesButton.Name = "movesButton";
-            this.movesButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.movesButton.Size = new System.Drawing.Size(335, 120);
+            this.movesButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.movesButton.Size = new System.Drawing.Size(168, 62);
             this.movesButton.TabIndex = 1;
             this.movesButton.Text = " Moves";
             this.movesButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -180,9 +186,10 @@
             this.teamsButton.ImageIndex = 3;
             this.teamsButton.ImageList = this.icons;
             this.teamsButton.Location = new System.Drawing.Point(0, 0);
+            this.teamsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.teamsButton.Name = "teamsButton";
-            this.teamsButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.teamsButton.Size = new System.Drawing.Size(335, 120);
+            this.teamsButton.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.teamsButton.Size = new System.Drawing.Size(168, 62);
             this.teamsButton.TabIndex = 0;
             this.teamsButton.Text = " Teams";
             this.teamsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,9 +200,10 @@
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1.Location = new System.Drawing.Point(0, 747);
+            this.label1.Location = new System.Drawing.Point(0, 405);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 32);
+            this.label1.Size = new System.Drawing.Size(168, 17);
             this.label1.TabIndex = 6;
             this.label1.Text = "CC BY Kaolin | Eris";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -206,16 +214,18 @@
             this.logoPanel.Controls.Add(this.appTitleLabel);
             this.logoPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.logoPanel.Location = new System.Drawing.Point(0, 0);
+            this.logoPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logoPanel.Name = "logoPanel";
-            this.logoPanel.Size = new System.Drawing.Size(335, 125);
+            this.logoPanel.Size = new System.Drawing.Size(168, 65);
             this.logoPanel.TabIndex = 0;
             // 
             // appTitleLabel
             // 
             this.appTitleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.appTitleLabel.Location = new System.Drawing.Point(0, 0);
+            this.appTitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.appTitleLabel.Name = "appTitleLabel";
-            this.appTitleLabel.Size = new System.Drawing.Size(335, 125);
+            this.appTitleLabel.Size = new System.Drawing.Size(168, 65);
             this.appTitleLabel.TabIndex = 0;
             this.appTitleLabel.Text = "Pokemon Team Builder";
             this.appTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -225,9 +235,10 @@
             this.menuTitlePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.menuTitlePanel.Controls.Add(this.menuTitleLabel);
             this.menuTitlePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuTitlePanel.Location = new System.Drawing.Point(335, 0);
+            this.menuTitlePanel.Location = new System.Drawing.Point(168, 0);
+            this.menuTitlePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menuTitlePanel.Name = "menuTitlePanel";
-            this.menuTitlePanel.Size = new System.Drawing.Size(1374, 125);
+            this.menuTitlePanel.Size = new System.Drawing.Size(686, 65);
             this.menuTitlePanel.TabIndex = 1;
             // 
             // menuTitleLabel
@@ -236,8 +247,9 @@
             this.menuTitleLabel.Font = new System.Drawing.Font("Arial", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuTitleLabel.ForeColor = System.Drawing.Color.Gainsboro;
             this.menuTitleLabel.Location = new System.Drawing.Point(0, 0);
+            this.menuTitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.menuTitleLabel.Name = "menuTitleLabel";
-            this.menuTitleLabel.Size = new System.Drawing.Size(1374, 125);
+            this.menuTitleLabel.Size = new System.Drawing.Size(686, 65);
             this.menuTitleLabel.TabIndex = 0;
             this.menuTitleLabel.Text = "HOME";
             this.menuTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -245,21 +257,23 @@
             // desktopPanel
             // 
             this.desktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.desktopPanel.Location = new System.Drawing.Point(335, 125);
+            this.desktopPanel.Location = new System.Drawing.Point(168, 65);
+            this.desktopPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.desktopPanel.Name = "desktopPanel";
-            this.desktopPanel.Size = new System.Drawing.Size(1374, 654);
+            this.desktopPanel.Size = new System.Drawing.Size(686, 357);
             this.desktopPanel.TabIndex = 8;
             // 
             // PokemonUIForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1709, 779);
+            this.ClientSize = new System.Drawing.Size(854, 422);
             this.Controls.Add(this.desktopPanel);
             this.Controls.Add(this.menuTitlePanel);
             this.Controls.Add(this.menuPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1200, 850);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(608, 461);
             this.Name = "PokemonUIForm";
             this.Text = "Pokemon Team Builder";
             this.menuPanel.ResumeLayout(false);

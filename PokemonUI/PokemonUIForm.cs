@@ -1,5 +1,7 @@
-﻿using System;
+﻿using PokeApiNet;
+using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace PokemonUI
@@ -19,6 +21,7 @@ namespace PokemonUI
             Color.FromArgb(255, 64, 105)
         };
         private Form activeForm;
+               
 
         //constructor
         public PokemonUIForm()
@@ -27,7 +30,10 @@ namespace PokemonUI
             OpenChildForm(new Forms.Teams(), teamsButton);
         }
 
+
         //methods
+
+        
 
         private void OpenChildForm(Form childForm,object sender)
         {
@@ -44,7 +50,6 @@ namespace PokemonUI
             this.desktopPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-
         }
         private void ActivateButton(object sender) {
             if (sender!=null)
@@ -91,8 +96,6 @@ namespace PokemonUI
         private void movesButton_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.Moves(), sender);
-
-
         }
 
         private void itemsButton_Click(object sender, EventArgs e)
@@ -105,7 +108,6 @@ namespace PokemonUI
         private void pokemonButton_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.Pokemon(), sender);
-
         }
 
         private void settingsButton_Click(object sender, EventArgs e)

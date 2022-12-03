@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PokeApiNet;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,23 +9,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace PokemonUI.Forms
 {
     public partial class Teams : Form
     {
+
         public Teams()
         {
             InitializeComponent();
+          
         }
+
+
 
         private void Teams_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void newTeamButton_Click(object sender, EventArgs e)
+        public void newTeamButton_Click(object sender, EventArgs e) 
         {
-
+            PokemonEntry.generatePokemon();
         }
     }
 }
