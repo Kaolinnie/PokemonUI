@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,19 +16,10 @@ namespace PokemonUI
     {
 
         public static PokeApiClient client = new PokeApiClient();
-        public static async void GetPokemon(ListBox listbox)
+        public static async Task<NamedApiResourceList<Pokemon>> GetPokemon()
         {
-            //try
-            //{
-            PokeApiClient c = new PokeApiClient();
-            NamedApiResourceList<Pokemon> pokemonList = await c.GetNamedResourcePageAsync<Pokemon>(1154, 0);
-            pokemonList.Results.ForEach(delegate (NamedApiResource<Pokemon> pokemon)
-            {
-                listbox.Items.Add(pokemon.Name);
-            });
-            //implement function if u want
-            //} catch (Exception) { }
-
+            NamedApiResourceList<Pokemon> pokemonList = await client.GetNamedResourcePageAsync<Pokemon>(1154, 0);
+            return pokemonList;
         }
 
 

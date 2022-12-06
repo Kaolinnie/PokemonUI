@@ -28,24 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pokemonListBox = new System.Windows.Forms.ListBox();
+            this.components = new System.ComponentModel.Container();
+            this.pokemonListView = new System.Windows.Forms.ListView();
+            this.pokemonImageList = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
-            // pokemonListBox
+            // pokemonListView
             // 
-            this.pokemonListBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pokemonListBox.FormattingEnabled = true;
-            this.pokemonListBox.Location = new System.Drawing.Point(0, 0);
-            this.pokemonListBox.Name = "pokemonListBox";
-            this.pokemonListBox.Size = new System.Drawing.Size(800, 450);
-            this.pokemonListBox.TabIndex = 0;
+            this.pokemonListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pokemonListView.HideSelection = false;
+            this.pokemonListView.LargeImageList = this.pokemonImageList;
+            this.pokemonListView.Location = new System.Drawing.Point(0, 0);
+            this.pokemonListView.Name = "pokemonListView";
+            this.pokemonListView.Size = new System.Drawing.Size(1067, 554);
+            this.pokemonListView.TabIndex = 0;
+            this.pokemonListView.UseCompatibleStateImageBehavior = false;
+            // 
+            // pokemonImageList
+            // 
+            this.pokemonImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.pokemonImageList.ImageSize = new System.Drawing.Size(16, 16);
+            this.pokemonImageList.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // Pokemon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pokemonListBox);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.pokemonListView);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Pokemon";
             this.Text = "Pokemon";
             this.Load += new System.EventHandler(this.Pokemon_Load);
@@ -55,6 +66,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox pokemonListBox;
+        private System.Windows.Forms.ListView pokemonListView;
+        private System.Windows.Forms.ImageList pokemonImageList;
     }
 }

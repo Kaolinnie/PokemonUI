@@ -37,8 +37,8 @@ namespace PokemonUI.Forms
                 tmp.PkmnTeam[i] = new Team.Pokemon
                 {
                     Pkmn = p,
-                    Moves = PokemonHandler.RandomMoves(p),
-                    Ability = p.Abilities.ElementAt(ran.Next(0, p.Abilities.Count)).Ability
+                   // Moves = PokemonHandler.RandomMoves(p),
+                   // Ability = p.Abilities.ElementAt(ran.Next(0, p.Abilities.Count)).Ability
                 };
             }
             return tmp;
