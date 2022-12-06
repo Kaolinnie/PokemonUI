@@ -128,7 +128,9 @@
     <Compile Include="Forms\Teams.Designer.cs">
       <DependentUpon>Teams.cs</DependentUpon>
     </Compile>
-    <Compile Include="PokemonEntry.cs" />
+    <Compile Include="Models\Team.cs" />
+    <Compile Include="Models\TypesWrapper.cs" />
+    <Compile Include="PokemonHandler.cs" />
     <Compile Include="PokemonUIForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +139,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Pokemon.resx">
+      <DependentUpon>Pokemon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Teams.resx">
       <DependentUpon>Teams.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +186,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-sword-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apicot-berry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\025.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

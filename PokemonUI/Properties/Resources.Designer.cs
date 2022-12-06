@@ -63,9 +63,29 @@ namespace PokemonUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _025 {
+            get {
+                object obj = ResourceManager.GetObject("025", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1337524_game_go_moltres_play_pokemon_icon {
             get {
                 object obj = ResourceManager.GetObject("1337524_game_go_moltres_play_pokemon_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap apicot_berry {
+            get {
+                object obj = ResourceManager.GetObject("apicot-berry", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

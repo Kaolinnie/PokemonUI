@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pokemonListBox = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // pokemonListBox
+            // 
+            this.pokemonListBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pokemonListBox.FormattingEnabled = true;
+            this.pokemonListBox.Location = new System.Drawing.Point(0, 0);
+            this.pokemonListBox.Name = "pokemonListBox";
+            this.pokemonListBox.Size = new System.Drawing.Size(800, 450);
+            this.pokemonListBox.TabIndex = 0;
+            // 
+            // Pokemon
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pokemonListBox);
+            this.Name = "Pokemon";
             this.Text = "Pokemon";
+            this.Load += new System.EventHandler(this.Pokemon_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox pokemonListBox;
     }
 }
