@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.itemsListBox = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // itemsListBox
+            // 
+            this.itemsListBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemsListBox.FormattingEnabled = true;
+            this.itemsListBox.Location = new System.Drawing.Point(0, 0);
+            this.itemsListBox.Name = "itemsListBox";
+            this.itemsListBox.Size = new System.Drawing.Size(800, 450);
+            this.itemsListBox.TabIndex = 0;
+            this.itemsListBox.SelectedIndexChanged += new System.EventHandler(this.itemsListBox_SelectedIndexChanged);
+            // 
+            // Items
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.itemsListBox);
+            this.Name = "Items";
             this.Text = "Items";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox itemsListBox;
     }
 }

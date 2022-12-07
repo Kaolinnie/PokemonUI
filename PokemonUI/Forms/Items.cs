@@ -15,6 +15,29 @@ namespace PokemonUI.Forms
         public Items()
         {
             InitializeComponent();
+            loadItemsListBox();
+        }
+
+        public void loadItemsListBox()
+        {
+            itemsListBox.Items.Add("Ability Urge");
+            itemsListBox.Items.Add("Academy Bottle");
+            itemsListBox.Items.Add("Training Weight");
+            itemsListBox.Items.Add("Ability Urge");
+            itemsListBox.Items.Add("Academy Bottle");
+            itemsListBox.Items.Add("Training Weight");
+            itemsListBox.Items.Add("Ability Urge");
+            itemsListBox.Items.Add("Academy Bottle");
+            itemsListBox.Items.Add("Training Weight");
+            itemsListBox.Items.Add("Ability Urge");
+            itemsListBox.Items.Add("Academy Bottle");
+            itemsListBox.Items.Add("Training Weight");
+        }
+
+        private void itemsListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string item = itemsListBox.GetItemText(itemsListBox.SelectedItem);
+            MessageBox.Show("This item is very strong", item, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

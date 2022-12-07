@@ -101,3 +101,16 @@ C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Runtime.Compil
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Text.Encodings.Web.xml
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.csproj.CopyComplete
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Pokemon.resources
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Settings.resources
+C:\xampp\PokemonUI\PokemonUI\bin\Debug\fr-CA\PokemonUI.resources.dll
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Settings.fr-CA.resources
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\fr-CA\PokemonUI.resources.dll
+C:\xampp\PokemonUI\PokemonUI\bin\Debug\fr\PokemonUI.resources.dll
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Settings.fr.resources
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\fr\PokemonUI.resources.dll
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.fr.resources
+C:\xampp\PokemonUI\PokemonUI\bin\Debug\en\PokemonUI.resources.dll
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Settings.en.resources
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\en\PokemonUI.resources.dll
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Items.resources

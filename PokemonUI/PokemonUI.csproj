@@ -130,7 +130,6 @@
     </Compile>
     <Compile Include="Models\Team.cs" />
     <Compile Include="Models\TypesWrapper.cs" />
-    <Compile Include="PokemonHandler.cs" />
     <Compile Include="PokemonUIForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,11 +138,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Items.resx">
+      <DependentUpon>Items.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Pokemon.resx">
       <DependentUpon>Pokemon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.en.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.fr-CA.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.fr.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Teams.resx">
       <DependentUpon>Teams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokemonUIForm.fr.resx">
+      <DependentUpon>PokemonUIForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PokemonUIForm.resx">
       <DependentUpon>PokemonUIForm.cs</DependentUpon>

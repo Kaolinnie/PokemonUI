@@ -39,6 +39,7 @@
             this.pokemonListBox.Name = "pokemonListBox";
             this.pokemonListBox.Size = new System.Drawing.Size(800, 450);
             this.pokemonListBox.TabIndex = 0;
+            this.pokemonListBox.SelectedIndexChanged += new System.EventHandler(this.pokemonListBox_SelectedIndexChanged);
             // 
             // Pokemon
             // 

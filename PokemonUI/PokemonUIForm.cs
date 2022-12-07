@@ -2,12 +2,15 @@
 using System;
 using System.Drawing;
 using System.IO;
+using System.Runtime.CompilerServices;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace PokemonUI
 {
     public partial class PokemonUIForm : Form
-    {
+    { 
+
 
         //reference: https://www.youtube.com/watch?v=BtOEztT1Qzk
 
