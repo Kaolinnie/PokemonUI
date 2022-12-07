@@ -76,7 +76,6 @@ C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Microsoft.Extensions.
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Microsoft.Extensions.Options.dll
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Microsoft.Extensions.Primitives.dll
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\PokeApiNet.dll
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Buffers.dll
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Collections.Immutable.dll
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Memory.dll
@@ -92,7 +91,6 @@ C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Microsoft.Extensions.
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Microsoft.Extensions.Options.xml
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Microsoft.Extensions.Primitives.xml
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\PokeApiNet.xml
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Buffers.xml
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Collections.Immutable.xml
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Memory.xml
@@ -102,3 +100,14 @@ C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Text.Encodings
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.csproj.CopyComplete
 C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Pokemon.resources
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\CsvHelper.dll
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Flurl.dll
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Flurl.Http.dll
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\CsvHelper.xml
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Flurl.pdb
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Flurl.xml
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Flurl.Http.pdb
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Flurl.Http.xml
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Microsoft.Bcl.HashCode.xml

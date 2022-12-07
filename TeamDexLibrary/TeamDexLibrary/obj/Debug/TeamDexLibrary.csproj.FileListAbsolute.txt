@@ -1,0 +1,17 @@
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\bin\Debug\TeamDexLibrary.exe.config
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\bin\Debug\TeamDexLibrary.exe
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\bin\Debug\TeamDexLibrary.pdb
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\bin\Debug\Newtonsoft.Json.Bson.dll
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\bin\Debug\Newtonsoft.Json.Bson.pdb
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\bin\Debug\Newtonsoft.Json.Bson.xml
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\obj\Debug\TeamDexLibrary.csproj.AssemblyReference.cache
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\obj\Debug\TeamDexLibrary.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\obj\Debug\TeamDexLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\obj\Debug\TeamDexLibrary.csproj.CopyComplete
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\obj\Debug\TeamDexLibrary.exe
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\obj\Debug\TeamDexLibrary.pdb
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\obj\Debug\TeamDexLibrary.Properties.Resources.resources
+C:\Users\Kaolin\Desktop\Studying\TeamDexLibrary\TeamDexLibrary\obj\Debug\TeamDexLibrary.csproj.GenerateResource.cache

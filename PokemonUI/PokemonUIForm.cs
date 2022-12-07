@@ -1,4 +1,4 @@
-﻿using PokeApiNet;
+﻿using CsvHelper;
 using System;
 using System.Drawing;
 using System.IO;
@@ -32,9 +32,6 @@ namespace PokemonUI
 
 
         //methods
-
-        
-
         private void OpenChildForm(Form childForm,object sender)
         {
             if (activeForm!= null)

@@ -35,12 +35,17 @@
             // 
             // pokemonListView
             // 
-            this.pokemonListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pokemonListView.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.pokemonListView.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.pokemonListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pokemonListView.Dock = System.Windows.Forms.DockStyle.Left;
             this.pokemonListView.HideSelection = false;
             this.pokemonListView.LargeImageList = this.pokemonImageList;
             this.pokemonListView.Location = new System.Drawing.Point(0, 0);
+            this.pokemonListView.Margin = new System.Windows.Forms.Padding(2);
+            this.pokemonListView.MultiSelect = false;
             this.pokemonListView.Name = "pokemonListView";
-            this.pokemonListView.Size = new System.Drawing.Size(1067, 554);
+            this.pokemonListView.Size = new System.Drawing.Size(242, 450);
             this.pokemonListView.TabIndex = 0;
             this.pokemonListView.UseCompatibleStateImageBehavior = false;
             // 
@@ -52,11 +57,10 @@
             // 
             // Pokemon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pokemonListView);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Pokemon";
             this.Text = "Pokemon";
             this.Load += new System.EventHandler(this.Pokemon_Load);

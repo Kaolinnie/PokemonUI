@@ -1,5 +1,4 @@
-﻿using PokeApiNet;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,34 +8,16 @@ namespace PokemonUI.Models
 {
     public class Team
     {
-        public Pokemon[] PkmnTeam { get; set; }
-
-        public Team()
-        {
-            PkmnTeam = new Pokemon[6];
-        }
-
+        public string Name { get; set; }
+        public string Description { get; set; } = "Random Team";
+        public Pokemon[] Members { get; set; } = new Pokemon[6];
 
         public class Pokemon
         {
-            public PokeApiNet.Pokemon Pkmn { get; set; }
-            public NamedApiResource<Move>[] Moves { get; set; }
-            public NamedApiResource<Item> HeldItem { get; set; }
-            public NamedApiResource<Ability> Ability { get; set; }
-            
-
-            public override string ToString()
-            {
-                string pkmn = $"{Pkmn.Id}: {Pkmn.Name}\nAbility: {Ability.Name}";
-                string moves = "\nMoves:\n";
-                for(int i=0;i<Moves.Length;i++)
-                {
-                    moves += $"{i}) {Moves[i].Name}\n";
-                }
-
-                return pkmn + moves;
-            }
-
+            public Pokedex Species { get; set; }
+            public Item HeldItem { get; set; }
+            public Move[] Moves { get; set; } = new Move[4];
+            public Ability Ability { get; set; }
         }
     }
 }
