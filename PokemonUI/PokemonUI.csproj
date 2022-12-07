@@ -164,6 +164,9 @@
     <EmbeddedResource Include="PokemonUIForm.bin-NG.resx">
       <DependentUpon>PokemonUIForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PokemonUIForm.bin.resx">
+      <DependentUpon>PokemonUIForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PokemonUIForm.en.resx">
       <DependentUpon>PokemonUIForm.cs</DependentUpon>
     </EmbeddedResource>
