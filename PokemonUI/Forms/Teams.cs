@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CsvHelper;
 
 
 namespace PokemonUI.Forms
 {
     public partial class Teams : Form
     {
-
-        public Teams()
+        private ImageList allImages;
+        public Teams(ImageList allImages)
         {
             InitializeComponent();
-          
+            this.allImages = allImages;
         }
 
 

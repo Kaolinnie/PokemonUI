@@ -105,8 +105,18 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TeamDexLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Code\TeamDexLibrary\TeamDexLibrary\bin\Debug\TeamDexLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\ItemInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemInformation.Designer.cs">
+      <DependentUpon>ItemInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Items.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +134,12 @@
     </Compile>
     <Compile Include="Forms\Pokemon.Designer.cs">
       <DependentUpon>Pokemon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PokemonInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PokemonInformation.Designer.cs">
+      <DependentUpon>PokemonInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Settings.cs">
       <SubType>Form</SubType>
@@ -151,8 +167,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ItemInformation.resx">
+      <DependentUpon>ItemInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Items.resx">
+      <DependentUpon>Items.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Pokemon.resx">
       <DependentUpon>Pokemon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PokemonInformation.resx">
+      <DependentUpon>PokemonInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Teams.resx">
       <DependentUpon>Teams.cs</DependentUpon>
@@ -165,7 +190,19 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Json\ability.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Json\item.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Json\move.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
+    <None Include="Json\pokedex.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -555,6 +592,9 @@
     <None Include="Resources\version_group_pokemon_move_methods.csv" />
     <None Include="Resources\version_group_regions.csv" />
     <None Include="Resources\version_names.csv" />
+    <None Include="Json\type.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -7383,6 +7423,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\black-belt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fairy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bug.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psychic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flying.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ground.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poison.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fighting.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grass.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electric.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

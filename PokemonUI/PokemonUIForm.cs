@@ -1,7 +1,10 @@
-﻿using CsvHelper;
-using System;
+﻿using System;
+using System.Collections;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
+using System.Linq;
+using System.Resources;
 using System.Windows.Forms;
 
 namespace PokemonUI
@@ -27,8 +30,10 @@ namespace PokemonUI
         public PokemonUIForm()
         {
             InitializeComponent();
-            OpenChildForm(new Forms.Teams(), teamsButton);
+            OpenChildForm(new Forms.Teams(allImages), teamsButton);
         }
+
+
 
 
         //methods
@@ -87,7 +92,7 @@ namespace PokemonUI
 
         private void teamsButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Teams(), sender);
+            OpenChildForm(new Forms.Teams(allImages), sender);
         }
 
         private void movesButton_Click(object sender, EventArgs e)
@@ -97,14 +102,14 @@ namespace PokemonUI
 
         private void itemsButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Items(), sender);
+            OpenChildForm(new Forms.Items(allImages), sender);
 
 
         }
 
         private void pokemonButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Pokemon(), sender);
+            OpenChildForm(new Forms.Pokemon(allImages), sender);
         }
 
         private void settingsButton_Click(object sender, EventArgs e)
@@ -136,6 +141,27 @@ namespace PokemonUI
             }
 
             return Color.FromArgb(color.A, (byte)red, (byte)green, (byte)blue);
+        }
+
+        private void desktopPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PokemonUIForm_Load(object sender, EventArgs e)
+        {
+            var resourceSet = Properties.Resources.ResourceManager.GetResourceSet(CultureInfo.InvariantCulture, true, false);
+            if (resourceSet != null)
+            {
+                foreach (DictionaryEntry entry in resourceSet)
+                {
+                    var value = entry.Value as Bitmap; //only get images
+                    if (value != null)
+                    {
+                        allImages.Images.Add((string)entry.Key, value);
+                    }
+                }
+            }
         }
     }
 }
