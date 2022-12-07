@@ -163,5 +163,28 @@ namespace PokemonUI
                 }
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            switch (comboBox1.SelectedIndex)
+            {
+                case 0:
+                    changeLanguage.UpdateConfig("language", "en");
+                    Application.Restart();
+                    break;
+
+                case 1:
+                    changeLanguage.UpdateConfig("language", "fr");
+                    Application.Restart();
+                    break;
+
+                case 2:
+                    changeLanguage.UpdateConfig("language", "ja");
+                    Application.Restart();
+                    break;
+
+            }
+        }
     }
 }
