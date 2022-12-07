@@ -175,3 +175,5 @@ C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\bin\Debug\Json\type.json
 C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Items.resources
 C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.ItemInformation.resources
 C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.PokemonInformation.resources
+C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.CreateTeamPopup.resources
+C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\bin\Debug\Json\team.json
