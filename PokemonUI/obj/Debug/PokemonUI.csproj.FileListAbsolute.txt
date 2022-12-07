@@ -114,3 +114,10 @@ C:\xampp\PokemonUI\PokemonUI\bin\Debug\en\PokemonUI.resources.dll
 C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Settings.en.resources
 C:\xampp\PokemonUI\PokemonUI\obj\Debug\en\PokemonUI.resources.dll
 C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Items.resources
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.en.resources
+C:\xampp\PokemonUI\PokemonUI\bin\Debug\bin-NG\PokemonUI.resources.dll
+C:\xampp\PokemonUI\PokemonUI\bin\Debug\ja\PokemonUI.resources.dll
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.bin-NG.resources
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.ja.resources
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\bin-NG\PokemonUI.resources.dll
+C:\xampp\PokemonUI\PokemonUI\obj\Debug\ja\PokemonUI.resources.dll

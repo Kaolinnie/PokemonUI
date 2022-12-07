@@ -14,18 +14,21 @@ namespace PokemonUI.Forms
 
         private void Pokemon_Load(object sender, EventArgs e)
         {
+            pokemonListBox.Items.Add("Pichu");
             pokemonListBox.Items.Add("Pikachu");
+            pokemonListBox.Items.Add("Charmander");
+            pokemonListBox.Items.Add("Charmeleon");
             pokemonListBox.Items.Add("Charizard");
             pokemonListBox.Items.Add("Piplup");
-            pokemonListBox.Items.Add("Pikachu");
-            pokemonListBox.Items.Add("Charizard");
-            pokemonListBox.Items.Add("Piplup"); 
-            pokemonListBox.Items.Add("Pikachu");
-            pokemonListBox.Items.Add("Charizard");
-            pokemonListBox.Items.Add("Piplup");
-            pokemonListBox.Items.Add("Pikachu");
-            pokemonListBox.Items.Add("Charizard");
-            pokemonListBox.Items.Add("Piplup");
+            pokemonListBox.Items.Add("Bulbasaur");
+            pokemonListBox.Items.Add("Eevee");
+            pokemonListBox.Items.Add("Snorlax"); 
+            pokemonListBox.Items.Add("Garchomp");
+            pokemonListBox.Items.Add("Lucario");
+            pokemonListBox.Items.Add("Ditto");
+            pokemonListBox.Items.Add("Gardevoir");
+            pokemonListBox.Items.Add("Mewtwo");
+            pokemonListBox.Items.Add("Mew");
 
 
             //PokemonHandler.GetPokemon(pokemonListBox);

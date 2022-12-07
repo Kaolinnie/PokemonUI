@@ -29,26 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2")});
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // button1
             // 
@@ -62,18 +44,12 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
             this.Name = "Settings";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
     }
 }

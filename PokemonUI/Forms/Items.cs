@@ -22,9 +22,9 @@ namespace PokemonUI.Forms
         {
             itemsListBox.Items.Add("Ability Urge");
             itemsListBox.Items.Add("Academy Bottle");
-            itemsListBox.Items.Add("Training Weight");
-            itemsListBox.Items.Add("Ability Urge");
-            itemsListBox.Items.Add("Academy Bottle");
+            itemsListBox.Items.Add("Rare Candy Small");
+            itemsListBox.Items.Add("Rare Candy Medium");
+            itemsListBox.Items.Add("Rare Candy Large");
             itemsListBox.Items.Add("Training Weight");
             itemsListBox.Items.Add("Ability Urge");
             itemsListBox.Items.Add("Academy Bottle");

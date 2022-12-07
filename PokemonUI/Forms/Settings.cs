@@ -23,25 +23,7 @@ namespace PokemonUI.Forms
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            switch (comboBox1.SelectedIndex) 
-            { 
-                case 0:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
-                    //PokemonUIForm.Parent = new System.Globalization.CultureInfo("en");
-                    break;
-                case 1:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr");
-                    //PokemonUIForm.Parent = new System.Globalization.CultureInfo("fr");
-                    break;
-            }
-
-       
-            this.Controls.Clear(); 
-       
-            InitializeComponent();
-        }
+ 
 
         private void button1_Click(object sender, EventArgs e)
         {

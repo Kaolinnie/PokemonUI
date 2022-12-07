@@ -1,5 +1,6 @@
 ﻿using PokeApiNet;
 using System;
+using System.Configuration;
 using System.Drawing;
 using System.IO;
 using System.Runtime.CompilerServices;
@@ -10,6 +11,8 @@ namespace PokemonUI
 {
     public partial class PokemonUIForm : Form
     { 
+   
+        
 
 
         //reference: https://www.youtube.com/watch?v=BtOEztT1Qzk
@@ -142,6 +145,32 @@ namespace PokemonUI
             }
 
             return Color.FromArgb(color.A, (byte)red, (byte)green, (byte)blue);
+        }
+
+        private void PokemonUIForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            switch (comboBox1.SelectedIndex)
+            {
+                case 0: changeLanguage.UpdateConfig("language", "en");
+                        Application.Restart();
+                        break;
+                    
+                case 1: changeLanguage.UpdateConfig("language", "fr");
+                        Application.Restart();
+                        break;
+                    
+                case 2:
+                    changeLanguage.UpdateConfig("language", "ja");
+                        Application.Restart();
+                        break;
+                    
+            }
         }
     }
 }

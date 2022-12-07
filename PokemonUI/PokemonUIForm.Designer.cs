@@ -37,6 +37,7 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.appTitleLabel = new System.Windows.Forms.Label();
             this.menuTitlePanel = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuTitleLabel = new System.Windows.Forms.Label();
             this.desktopPanel = new System.Windows.Forms.Panel();
             this.types = new System.Windows.Forms.ImageList(this.components);
@@ -104,8 +105,20 @@
             // 
             resources.ApplyResources(this.menuTitlePanel, "menuTitlePanel");
             this.menuTitlePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menuTitlePanel.Controls.Add(this.comboBox1);
             this.menuTitlePanel.Controls.Add(this.menuTitleLabel);
             this.menuTitlePanel.Name = "menuTitlePanel";
+            // 
+            // comboBox1
+            // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2")});
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // menuTitleLabel
             // 
@@ -177,6 +190,7 @@
             this.Controls.Add(this.menuTitlePanel);
             this.Controls.Add(this.menuPanel);
             this.Name = "PokemonUIForm";
+            this.Load += new System.EventHandler(this.PokemonUIForm_Load);
             this.menuPanel.ResumeLayout(false);
             this.menuPanel.PerformLayout();
             this.buttonsPanel.ResumeLayout(false);
@@ -203,6 +217,7 @@
         private System.Windows.Forms.Panel buttonsPanel;
         private System.Windows.Forms.Panel desktopPanel;
         private System.Windows.Forms.ImageList types;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
