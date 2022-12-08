@@ -55,11 +55,11 @@
             // 
             // menuPanel
             // 
+            resources.ApplyResources(this.menuPanel, "menuPanel");
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.menuPanel.Controls.Add(this.buttonsPanel);
             this.menuPanel.Controls.Add(this.label1);
             this.menuPanel.Controls.Add(this.logoPanel);
-            resources.ApplyResources(this.menuPanel, "menuPanel");
             this.menuPanel.ForeColor = System.Drawing.Color.Gainsboro;
             this.menuPanel.Name = "menuPanel";
             // 
@@ -137,9 +137,9 @@
             // 
             // logoPanel
             // 
+            resources.ApplyResources(this.logoPanel, "logoPanel");
             this.logoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.logoPanel.Controls.Add(this.appTitleLabel);
-            resources.ApplyResources(this.logoPanel, "logoPanel");
             this.logoPanel.Name = "logoPanel";
             // 
             // appTitleLabel
@@ -149,10 +149,10 @@
             // 
             // menuTitlePanel
             // 
+            resources.ApplyResources(this.menuTitlePanel, "menuTitlePanel");
             this.menuTitlePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.menuTitlePanel.Controls.Add(this.comboBox1);
             this.menuTitlePanel.Controls.Add(this.menuTitleLabel);
-            resources.ApplyResources(this.menuTitlePanel, "menuTitlePanel");
             this.menuTitlePanel.Name = "menuTitlePanel";
             // 
             // comboBox1
@@ -164,6 +164,7 @@
             resources.GetString("comboBox1.Items1"),
             resources.GetString("comboBox1.Items2")});
             this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // menuTitleLabel
             // 
