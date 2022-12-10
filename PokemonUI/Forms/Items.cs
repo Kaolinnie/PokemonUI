@@ -15,11 +15,9 @@ namespace PokemonUI.Forms
     public partial class Items : Form
     {
         private List<Item> items;
-        private ImageList allImages;
-        public Items(ImageList allImages)
+        public Items()
         {
             InitializeComponent();
-            this.allImages = allImages;
         }
 
         private void Items_Load(object sender, EventArgs e)
@@ -40,7 +38,7 @@ namespace PokemonUI.Forms
                 (from tmp in items
                 where tmp.Name == itemText
                 select tmp).First();
-            Image img = allImages.Images[image];
+            Image img = itemImages.Images[image];
 
             ItemInformation popup = new ItemInformation(item,img);
             DialogResult dialogresult = popup.ShowDialog();

@@ -11,12 +11,10 @@ namespace PokemonUI.Forms
 {
     public partial class Pokemon : Form
     {
-        private ImageList allImages;
         private List<Pokedex> pokedex;
-        public Pokemon(ImageList allImages)
+        public Pokemon()
         {
             InitializeComponent();
-            this.allImages = allImages;
         }
 
 
@@ -37,9 +35,9 @@ namespace PokemonUI.Forms
                 (from tmp in pokedex
                  where tmp.Name == pokemonText
                  select tmp).First();
-            Image img = allImages.Images["_"+pkmn.Id];
+            Image img = pokemonImages.Images[$"{pkmn.Id}"];
 
-            PokemonInformation popup = new PokemonInformation(pkmn, img,allImages);
+            PokemonInformation popup = new PokemonInformation(pkmn, img);
             DialogResult dialogresult = popup.ShowDialog();
             if (dialogresult == DialogResult.OK)
             {

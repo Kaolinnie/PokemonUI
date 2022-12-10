@@ -176,6 +176,12 @@
     <Compile Include="Forms\Teams.Designer.cs">
       <DependentUpon>Teams.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageLists.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageLists.Designer.cs">
+      <DependentUpon>ImageLists.cs</DependentUpon>
+    </Compile>
     <Compile Include="PokemonUIForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Teams.resx">
       <DependentUpon>Teams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageLists.resx">
+      <DependentUpon>ImageLists.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PokemonUIForm.aa.resx">
       <DependentUpon>PokemonUIForm.cs</DependentUpon>

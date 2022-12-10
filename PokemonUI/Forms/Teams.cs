@@ -13,19 +13,16 @@ namespace PokemonUI.Forms
 {
     public partial class Teams : Form
     {
-        private ImageList allImages;
         private List<Team> teamList;
-        public Teams(ImageList allImages)
+        public Teams()
         {
             InitializeComponent();
-            this.allImages = allImages;
             SetTeamList();
         }
 
         private void SetTeamList()
         {
             teamList = DataRetriever.teamdex(@"./Json/team.json");
-
         }
         private void Teams_Load(object sender, EventArgs e)
         {
@@ -89,13 +86,15 @@ namespace PokemonUI.Forms
                 select tmp).First();
 
             teamName.Text = team.Name;
-            teamDescription.Text = team.Description;  
-            var boxes = membersBox.Controls;
+            teamDescription.Text = team.Description;
+            var boxes = membersTable.Controls;
 
             for (int i=0;i<team.Members.Length;i++)
             {
-                ((PictureBox)boxes[i]).Image = allImages.Images['_' + team.Members[i]];
+                ((PictureBox)boxes[i]).Image = pokemonImages.Images[$"{team.Members[i]}"];
             }
+            member1.Image = pokemonImages.Images["762"];
+
         }
         private DialogResult InputBox(string title, string promptText, ref string value)
         {
@@ -136,6 +135,11 @@ namespace PokemonUI.Forms
         }
 
         private void pokemon1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void heldItemImage_Click(object sender, EventArgs e)
         {
 
         }

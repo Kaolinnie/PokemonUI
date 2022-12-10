@@ -30,7 +30,7 @@ namespace PokemonUI
         public PokemonUIForm()
         {
             InitializeComponent();
-            OpenChildForm(new Forms.Teams(allImages), teamsButton);
+            OpenChildForm(new Forms.Teams(), teamsButton);
         }
 
 
@@ -92,7 +92,7 @@ namespace PokemonUI
 
         private void teamsButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Teams(allImages), sender);
+            OpenChildForm(new Forms.Teams(), sender);
         }
 
         private void movesButton_Click(object sender, EventArgs e)
@@ -102,14 +102,14 @@ namespace PokemonUI
 
         private void itemsButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Items(allImages), sender);
+            OpenChildForm(new Forms.Items(), sender);
 
 
         }
 
         private void pokemonButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Pokemon(allImages), sender);
+            OpenChildForm(new Forms.Pokemon(), sender);
         }
 
         private void settingsButton_Click(object sender, EventArgs e)
@@ -158,7 +158,7 @@ namespace PokemonUI
                     var value = entry.Value as Bitmap; //only get images
                     if (value != null)
                     {
-                        allImages.Images.Add((string)entry.Key, value);
+                        pokemonImages.Images.Add((string)entry.Key, value);
                     }
                 }
             }

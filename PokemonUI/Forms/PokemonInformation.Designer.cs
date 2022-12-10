@@ -40,9 +40,10 @@
             // pokemonIdLabel
             // 
             this.pokemonIdLabel.AutoSize = true;
-            this.pokemonIdLabel.Location = new System.Drawing.Point(318, 12);
+            this.pokemonIdLabel.Location = new System.Drawing.Point(159, 6);
+            this.pokemonIdLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.pokemonIdLabel.Name = "pokemonIdLabel";
-            this.pokemonIdLabel.Size = new System.Drawing.Size(29, 25);
+            this.pokemonIdLabel.Size = new System.Drawing.Size(15, 13);
             this.pokemonIdLabel.TabIndex = 1;
             this.pokemonIdLabel.Text = "id";
             this.pokemonIdLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -51,18 +52,20 @@
             // 
             this.pokemonNameLabel.AutoSize = true;
             this.pokemonNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pokemonNameLabel.Location = new System.Drawing.Point(318, 47);
+            this.pokemonNameLabel.Location = new System.Drawing.Point(159, 24);
+            this.pokemonNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.pokemonNameLabel.Name = "pokemonNameLabel";
-            this.pokemonNameLabel.Size = new System.Drawing.Size(130, 51);
+            this.pokemonNameLabel.Size = new System.Drawing.Size(67, 26);
             this.pokemonNameLabel.TabIndex = 2;
             this.pokemonNameLabel.Text = "name";
             // 
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(327, 210);
+            this.button1.Location = new System.Drawing.Point(164, 109);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 46);
+            this.button1.Size = new System.Drawing.Size(60, 24);
             this.button1.TabIndex = 5;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
@@ -70,39 +73,43 @@
             // pokemonImage
             // 
             this.pokemonImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pokemonImage.Location = new System.Drawing.Point(12, 12);
+            this.pokemonImage.Location = new System.Drawing.Point(6, 6);
+            this.pokemonImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pokemonImage.Name = "pokemonImage";
-            this.pokemonImage.Size = new System.Drawing.Size(300, 300);
+            this.pokemonImage.Size = new System.Drawing.Size(151, 157);
             this.pokemonImage.TabIndex = 0;
             this.pokemonImage.TabStop = false;
             // 
             // type1
             // 
             this.type1.AutoSize = true;
-            this.type1.Location = new System.Drawing.Point(322, 143);
+            this.type1.Location = new System.Drawing.Point(161, 74);
+            this.type1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.type1.Name = "type1";
-            this.type1.Size = new System.Drawing.Size(0, 25);
+            this.type1.Size = new System.Drawing.Size(0, 13);
             this.type1.TabIndex = 6;
             // 
             // type2
             // 
             this.type2.AutoSize = true;
-            this.type2.Location = new System.Drawing.Point(421, 143);
+            this.type2.Location = new System.Drawing.Point(210, 74);
+            this.type2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.type2.Name = "type2";
-            this.type2.Size = new System.Drawing.Size(0, 25);
+            this.type2.Size = new System.Drawing.Size(0, 13);
             this.type2.TabIndex = 7;
             // 
             // PokemonInformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 337);
+            this.ClientSize = new System.Drawing.Size(400, 175);
             this.Controls.Add(this.type2);
             this.Controls.Add(this.type1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pokemonNameLabel);
             this.Controls.Add(this.pokemonIdLabel);
             this.Controls.Add(this.pokemonImage);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PokemonInformation";
             this.Text = "PokemonInformation";
             this.Load += new System.EventHandler(this.PokemonInformation_Load);

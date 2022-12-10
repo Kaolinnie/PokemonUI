@@ -14,8 +14,7 @@ namespace PokemonUI.Forms
         private Pokedex pkmn;
         private List<TeamDexLibrary.Type> typedex;
         private Image pkmnImage;
-        private ImageList allImages;
-        public PokemonInformation(Pokedex pkmn, Image pkmnImage,ImageList allImages)
+        public PokemonInformation(Pokedex pkmn, Image pkmnImage)
         {
             InitializeComponent();
             this.pkmn = pkmn;
