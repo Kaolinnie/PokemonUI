@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PokemonUI
 {
@@ -15,7 +16,7 @@ namespace PokemonUI
         //reference: https://www.youtube.com/watch?v=BtOEztT1Qzk
 
         //fields
-        private Button currentButton;
+        private System.Windows.Forms.Button currentButton;
         private Color[] menuColors = {
             Color.FromArgb(97, 89, 90),
             Color.FromArgb(148, 10, 17),
@@ -56,22 +57,22 @@ namespace PokemonUI
         private void ActivateButton(object sender) {
             if (sender!=null)
             {
-                if(currentButton!=(Button)sender)
+                if(currentButton!=(System.Windows.Forms.Button)sender)
                 {
                     DisableButton();
-                    int index = buttonsPanel.Controls.IndexOf((Button)sender);
+                    int index = buttonsPanel.Controls.IndexOf((System.Windows.Forms.Button)sender);
                     if(index>=5)
                     {
                         MessageBox.Show("Index out of bounds: " + index+"\nNumber of controls: "+menuPanel.Controls.Count, "Out of bounds", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     } else
                     {
                     Color color = menuColors[index];
-                    currentButton = (Button)sender;
+                    currentButton = (System.Windows.Forms.Button)sender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
                     menuTitlePanel.BackColor = color;
-                    menuTitleLabel.Text = ((Button)sender).Text;
+                    menuTitleLabel.Text = ((System.Windows.Forms.Button)sender).Text;
                     logoPanel.BackColor = ChangeColorBrightness(color, -0.3);
                     }
                 }
@@ -81,7 +82,7 @@ namespace PokemonUI
         {
             foreach(Control previousBtn in buttonsPanel.Controls)
             {
-                if(previousBtn.GetType()==typeof(Button))
+                if(previousBtn.GetType()==typeof(System.Windows.Forms.Button))
                 {
                     previousBtn.BackColor = Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = Color.Gainsboro;
@@ -164,27 +165,35 @@ namespace PokemonUI
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var changeLanguage = new ChangeLanguage();
-            switch (comboBox1.SelectedIndex)
-            {
-                case 0:
-                    changeLanguage.UpdateConfig("language", "en");
-                    Application.Restart();
-                    break;
+            changeLanguage.UpdateConfig("language", "en");
+            Application.Restart();
+        }
 
-                case 1:
-                    changeLanguage.UpdateConfig("language", "fr");
-                    Application.Restart();
-                    break;
+        private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language", "fr-ca");
+            Application.Restart();
+        }
 
-                case 2:
-                    changeLanguage.UpdateConfig("language", "ja");
-                    Application.Restart();
-                    break;
+        private void japaneseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language", "jp");
+            Application.Restart();
+        }
 
-            }
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

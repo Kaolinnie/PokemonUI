@@ -199,11 +199,17 @@
     <EmbeddedResource Include="Forms\Items.resx">
       <DependentUpon>Items.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Moves.resx">
+      <DependentUpon>Moves.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Pokemon.resx">
       <DependentUpon>Pokemon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PokemonInformation.resx">
       <DependentUpon>PokemonInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teams.fr-CA.resx">
+      <DependentUpon>Teams.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Teams.resx">
       <DependentUpon>Teams.cs</DependentUpon>
@@ -215,6 +221,9 @@
       <DependentUpon>PokemonUIForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PokemonUIForm.en.resx">
+      <DependentUpon>PokemonUIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokemonUIForm.fr-CA.resx">
       <DependentUpon>PokemonUIForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PokemonUIForm.fr.resx">

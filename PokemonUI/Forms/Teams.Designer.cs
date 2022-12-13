@@ -35,6 +35,19 @@
             this.newTeamButton = new System.Windows.Forms.Button();
             this.teamsImages = new System.Windows.Forms.ImageList(this.components);
             this.teamMembersPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.teamName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.teamDescription = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.membersTable = new System.Windows.Forms.TableLayoutPanel();
+            this.member1 = new System.Windows.Forms.PictureBox();
+            this.member2 = new System.Windows.Forms.PictureBox();
+            this.member3 = new System.Windows.Forms.PictureBox();
+            this.member4 = new System.Windows.Forms.PictureBox();
+            this.member5 = new System.Windows.Forms.PictureBox();
+            this.member6 = new System.Windows.Forms.PictureBox();
             this.pokemonDetails = new System.Windows.Forms.Panel();
             this.heldItemLabel = new System.Windows.Forms.Label();
             this.heldItemImage = new System.Windows.Forms.PictureBox();
@@ -42,10 +55,6 @@
             this.type2 = new System.Windows.Forms.Label();
             this.type1 = new System.Windows.Forms.Label();
             this.pokemonNameLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.teamDescription = new System.Windows.Forms.RichTextBox();
-            this.teamName = new System.Windows.Forms.TextBox();
             this.detailsPanel = new System.Windows.Forms.Panel();
             this.itemLabel = new System.Windows.Forms.Label();
             this.abilityLabel = new System.Windows.Forms.Label();
@@ -54,22 +63,10 @@
             this.movesListView = new System.Windows.Forms.ListView();
             this.pokemonImages = new System.Windows.Forms.ImageList(this.components);
             this.itemImages = new System.Windows.Forms.ImageList(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.membersTable = new System.Windows.Forms.TableLayoutPanel();
-            this.member1 = new System.Windows.Forms.PictureBox();
-            this.member2 = new System.Windows.Forms.PictureBox();
-            this.member3 = new System.Windows.Forms.PictureBox();
-            this.member4 = new System.Windows.Forms.PictureBox();
-            this.member5 = new System.Windows.Forms.PictureBox();
-            this.member6 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.teamsListPanel.SuspendLayout();
             this.teamMembersPanel.SuspendLayout();
-            this.pokemonDetails.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.heldItemImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokemonImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokemonPicture)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.membersTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.member1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.member2)).BeginInit();
@@ -77,48 +74,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.member4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.member5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.member6)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.pokemonDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.heldItemImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokemonImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokemonPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // teamsListPanel
             // 
+            resources.ApplyResources(this.teamsListPanel, "teamsListPanel");
             this.teamsListPanel.BackColor = System.Drawing.Color.Transparent;
             this.teamsListPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.teamsListPanel.Controls.Add(this.teamSelectButton);
             this.teamsListPanel.Controls.Add(this.newTeamButton);
-            this.teamsListPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.teamsListPanel.Location = new System.Drawing.Point(0, 0);
-            this.teamsListPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.teamsListPanel.Name = "teamsListPanel";
-            this.teamsListPanel.Size = new System.Drawing.Size(61, 366);
-            this.teamsListPanel.TabIndex = 0;
             // 
             // teamSelectButton
             // 
-            this.teamSelectButton.AutoScroll = true;
-            this.teamSelectButton.AutoScrollMinSize = new System.Drawing.Size(10, 0);
-            this.teamSelectButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.teamSelectButton.Location = new System.Drawing.Point(0, 0);
-            this.teamSelectButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.teamSelectButton, "teamSelectButton");
             this.teamSelectButton.Name = "teamSelectButton";
-            this.teamSelectButton.Size = new System.Drawing.Size(59, 323);
-            this.teamSelectButton.TabIndex = 2;
             // 
             // newTeamButton
             // 
+            resources.ApplyResources(this.newTeamButton, "newTeamButton");
             this.newTeamButton.BackColor = System.Drawing.Color.Transparent;
-            this.newTeamButton.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.newTeamButton.FlatAppearance.BorderSize = 0;
-            this.newTeamButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newTeamButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.newTeamButton.ImageKey = "(none)";
             this.newTeamButton.ImageList = this.teamsImages;
-            this.newTeamButton.Location = new System.Drawing.Point(0, 323);
-            this.newTeamButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.newTeamButton.Name = "newTeamButton";
-            this.newTeamButton.Size = new System.Drawing.Size(59, 41);
-            this.newTeamButton.TabIndex = 1;
-            this.newTeamButton.Text = "+";
             this.newTeamButton.UseVisualStyleBackColor = false;
             this.newTeamButton.Click += new System.EventHandler(this.newTeamButton_Click);
             // 
@@ -132,16 +115,103 @@
             // 
             // teamMembersPanel
             // 
+            resources.ApplyResources(this.teamMembersPanel, "teamMembersPanel");
             this.teamMembersPanel.Controls.Add(this.panel1);
             this.teamMembersPanel.Controls.Add(this.pokemonDetails);
-            this.teamMembersPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.teamMembersPanel.Location = new System.Drawing.Point(61, 0);
             this.teamMembersPanel.Name = "teamMembersPanel";
-            this.teamMembersPanel.Size = new System.Drawing.Size(602, 366);
-            this.teamMembersPanel.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.membersTable);
+            this.panel1.Name = "panel1";
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Controls.Add(this.teamName);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.teamDescription);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Name = "panel2";
+            // 
+            // teamName
+            // 
+            resources.ApplyResources(this.teamName, "teamName");
+            this.teamName.Name = "teamName";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // teamDescription
+            // 
+            resources.ApplyResources(this.teamDescription, "teamDescription");
+            this.teamDescription.Name = "teamDescription";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // membersTable
+            // 
+            resources.ApplyResources(this.membersTable, "membersTable");
+            this.membersTable.Controls.Add(this.member1, 0, 0);
+            this.membersTable.Controls.Add(this.member2, 1, 0);
+            this.membersTable.Controls.Add(this.member3, 2, 0);
+            this.membersTable.Controls.Add(this.member4, 0, 1);
+            this.membersTable.Controls.Add(this.member5, 1, 1);
+            this.membersTable.Controls.Add(this.member6, 2, 1);
+            this.membersTable.Name = "membersTable";
+            // 
+            // member1
+            // 
+            resources.ApplyResources(this.member1, "member1");
+            this.member1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.member1.Name = "member1";
+            this.member1.TabStop = false;
+            // 
+            // member2
+            // 
+            resources.ApplyResources(this.member2, "member2");
+            this.member2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.member2.Name = "member2";
+            this.member2.TabStop = false;
+            // 
+            // member3
+            // 
+            resources.ApplyResources(this.member3, "member3");
+            this.member3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.member3.Name = "member3";
+            this.member3.TabStop = false;
+            // 
+            // member4
+            // 
+            resources.ApplyResources(this.member4, "member4");
+            this.member4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.member4.Name = "member4";
+            this.member4.TabStop = false;
+            // 
+            // member5
+            // 
+            resources.ApplyResources(this.member5, "member5");
+            this.member5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.member5.Name = "member5";
+            this.member5.TabStop = false;
+            // 
+            // member6
+            // 
+            resources.ApplyResources(this.member6, "member6");
+            this.member6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.member6.Name = "member6";
+            this.member6.TabStop = false;
             // 
             // pokemonDetails
             // 
+            resources.ApplyResources(this.pokemonDetails, "pokemonDetails");
             this.pokemonDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pokemonDetails.Controls.Add(this.heldItemLabel);
             this.pokemonDetails.Controls.Add(this.heldItemImage);
@@ -149,152 +219,74 @@
             this.pokemonDetails.Controls.Add(this.type2);
             this.pokemonDetails.Controls.Add(this.type1);
             this.pokemonDetails.Controls.Add(this.pokemonNameLabel);
-            this.pokemonDetails.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pokemonDetails.Location = new System.Drawing.Point(405, 0);
-            this.pokemonDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pokemonDetails.Name = "pokemonDetails";
-            this.pokemonDetails.Size = new System.Drawing.Size(197, 366);
-            this.pokemonDetails.TabIndex = 2;
             // 
             // heldItemLabel
             // 
-            this.heldItemLabel.AutoSize = true;
-            this.heldItemLabel.Location = new System.Drawing.Point(103, 91);
-            this.heldItemLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.heldItemLabel, "heldItemLabel");
             this.heldItemLabel.Name = "heldItemLabel";
-            this.heldItemLabel.Size = new System.Drawing.Size(35, 13);
-            this.heldItemLabel.TabIndex = 12;
-            this.heldItemLabel.Text = "label3";
             // 
             // heldItemImage
             // 
+            resources.ApplyResources(this.heldItemImage, "heldItemImage");
             this.heldItemImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.heldItemImage.Location = new System.Drawing.Point(153, 86);
-            this.heldItemImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.heldItemImage.Name = "heldItemImage";
-            this.heldItemImage.Size = new System.Drawing.Size(26, 27);
-            this.heldItemImage.TabIndex = 11;
             this.heldItemImage.TabStop = false;
             this.heldItemImage.Click += new System.EventHandler(this.heldItemImage_Click);
             // 
             // pokemonImage
             // 
+            resources.ApplyResources(this.pokemonImage, "pokemonImage");
             this.pokemonImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pokemonImage.Location = new System.Drawing.Point(103, 3);
-            this.pokemonImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pokemonImage.Name = "pokemonImage";
-            this.pokemonImage.Size = new System.Drawing.Size(76, 79);
-            this.pokemonImage.TabIndex = 6;
             this.pokemonImage.TabStop = false;
             // 
             // type2
             // 
-            this.type2.AutoSize = true;
-            this.type2.Location = new System.Drawing.Point(58, 25);
-            this.type2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.type2, "type2");
             this.type2.Name = "type2";
-            this.type2.Size = new System.Drawing.Size(0, 13);
-            this.type2.TabIndex = 2;
             // 
             // type1
             // 
-            this.type1.AutoSize = true;
-            this.type1.Location = new System.Drawing.Point(6, 25);
-            this.type1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.type1, "type1");
             this.type1.Name = "type1";
-            this.type1.Size = new System.Drawing.Size(0, 13);
-            this.type1.TabIndex = 1;
             // 
             // pokemonNameLabel
             // 
-            this.pokemonNameLabel.AutoSize = true;
-            this.pokemonNameLabel.Location = new System.Drawing.Point(6, 3);
-            this.pokemonNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.pokemonNameLabel, "pokemonNameLabel");
             this.pokemonNameLabel.Name = "pokemonNameLabel";
-            this.pokemonNameLabel.Size = new System.Drawing.Size(35, 13);
-            this.pokemonNameLabel.TabIndex = 0;
-            this.pokemonNameLabel.Text = "label3";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 56);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Description";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Name";
-            // 
-            // teamDescription
-            // 
-            this.teamDescription.Location = new System.Drawing.Point(70, 54);
-            this.teamDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.teamDescription.Name = "teamDescription";
-            this.teamDescription.Size = new System.Drawing.Size(323, 57);
-            this.teamDescription.TabIndex = 1;
-            this.teamDescription.Text = "";
-            // 
-            // teamName
-            // 
-            this.teamName.Location = new System.Drawing.Point(70, 18);
-            this.teamName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.teamName.Name = "teamName";
-            this.teamName.Size = new System.Drawing.Size(323, 20);
-            this.teamName.TabIndex = 0;
             // 
             // detailsPanel
             // 
-            this.detailsPanel.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.detailsPanel, "detailsPanel");
             this.detailsPanel.Name = "detailsPanel";
-            this.detailsPanel.Size = new System.Drawing.Size(200, 100);
-            this.detailsPanel.TabIndex = 0;
             // 
             // itemLabel
             // 
-            this.itemLabel.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.itemLabel, "itemLabel");
             this.itemLabel.Name = "itemLabel";
-            this.itemLabel.Size = new System.Drawing.Size(100, 23);
-            this.itemLabel.TabIndex = 0;
             // 
             // abilityLabel
             // 
-            this.abilityLabel.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.abilityLabel, "abilityLabel");
             this.abilityLabel.Name = "abilityLabel";
-            this.abilityLabel.Size = new System.Drawing.Size(100, 23);
-            this.abilityLabel.TabIndex = 0;
             // 
             // nameLabel
             // 
-            this.nameLabel.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.nameLabel, "nameLabel");
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(100, 23);
-            this.nameLabel.TabIndex = 0;
             // 
             // pokemonPicture
             // 
-            this.pokemonPicture.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.pokemonPicture, "pokemonPicture");
             this.pokemonPicture.Name = "pokemonPicture";
-            this.pokemonPicture.Size = new System.Drawing.Size(100, 50);
-            this.pokemonPicture.TabIndex = 0;
             this.pokemonPicture.TabStop = false;
             // 
             // movesListView
             // 
+            resources.ApplyResources(this.movesListView, "movesListView");
             this.movesListView.HideSelection = false;
-            this.movesListView.Location = new System.Drawing.Point(0, 0);
             this.movesListView.Name = "movesListView";
-            this.movesListView.Size = new System.Drawing.Size(121, 97);
-            this.movesListView.TabIndex = 0;
             this.movesListView.UseCompatibleStateImageBehavior = false;
             // 
             // pokemonImages
@@ -2892,135 +2884,20 @@
             this.itemImages.Images.SetKeyName(885, "black-apricorn.png");
             this.itemImages.Images.SetKeyName(886, "black-belt.png");
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.membersTable);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(405, 366);
-            this.panel1.TabIndex = 5;
-            // 
-            // membersTable
-            // 
-            this.membersTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.membersTable.ColumnCount = 3;
-            this.membersTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.membersTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.membersTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.membersTable.Controls.Add(this.member1, 0, 0);
-            this.membersTable.Controls.Add(this.member2, 1, 0);
-            this.membersTable.Controls.Add(this.member3, 2, 0);
-            this.membersTable.Controls.Add(this.member4, 0, 1);
-            this.membersTable.Controls.Add(this.member5, 1, 1);
-            this.membersTable.Controls.Add(this.member6, 2, 1);
-            this.membersTable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.membersTable.Location = new System.Drawing.Point(0, 0);
-            this.membersTable.Name = "membersTable";
-            this.membersTable.RowCount = 2;
-            this.membersTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.membersTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.membersTable.Size = new System.Drawing.Size(405, 244);
-            this.membersTable.TabIndex = 4;
-            // 
-            // member1
-            // 
-            this.member1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.member1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.member1.Location = new System.Drawing.Point(4, 4);
-            this.member1.Name = "member1";
-            this.member1.Size = new System.Drawing.Size(127, 114);
-            this.member1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.member1.TabIndex = 0;
-            this.member1.TabStop = false;
-            // 
-            // member2
-            // 
-            this.member2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.member2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.member2.Location = new System.Drawing.Point(138, 4);
-            this.member2.Name = "member2";
-            this.member2.Size = new System.Drawing.Size(127, 114);
-            this.member2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.member2.TabIndex = 1;
-            this.member2.TabStop = false;
-            // 
-            // member3
-            // 
-            this.member3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.member3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.member3.Location = new System.Drawing.Point(272, 4);
-            this.member3.Name = "member3";
-            this.member3.Size = new System.Drawing.Size(129, 114);
-            this.member3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.member3.TabIndex = 2;
-            this.member3.TabStop = false;
-            // 
-            // member4
-            // 
-            this.member4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.member4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.member4.Location = new System.Drawing.Point(4, 125);
-            this.member4.Name = "member4";
-            this.member4.Size = new System.Drawing.Size(127, 115);
-            this.member4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.member4.TabIndex = 3;
-            this.member4.TabStop = false;
-            // 
-            // member5
-            // 
-            this.member5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.member5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.member5.Location = new System.Drawing.Point(138, 125);
-            this.member5.Name = "member5";
-            this.member5.Size = new System.Drawing.Size(127, 115);
-            this.member5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.member5.TabIndex = 4;
-            this.member5.TabStop = false;
-            // 
-            // member6
-            // 
-            this.member6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.member6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.member6.Location = new System.Drawing.Point(272, 125);
-            this.member6.Name = "member6";
-            this.member6.Size = new System.Drawing.Size(129, 115);
-            this.member6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.member6.TabIndex = 5;
-            this.member6.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.teamName);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.teamDescription);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 244);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(405, 171);
-            this.panel2.TabIndex = 5;
-            // 
             // Teams
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 366);
             this.Controls.Add(this.teamMembersPanel);
             this.Controls.Add(this.teamsListPanel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Teams";
-            this.Text = "Teams";
             this.Load += new System.EventHandler(this.Teams_Load);
             this.teamsListPanel.ResumeLayout(false);
             this.teamMembersPanel.ResumeLayout(false);
-            this.pokemonDetails.ResumeLayout(false);
-            this.pokemonDetails.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.heldItemImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokemonImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pokemonPicture)).EndInit();
+            this.teamMembersPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.membersTable.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.member1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.member2)).EndInit();
@@ -3028,8 +2905,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.member4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.member5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.member6)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pokemonDetails.ResumeLayout(false);
+            this.pokemonDetails.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.heldItemImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokemonImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pokemonPicture)).EndInit();
             this.ResumeLayout(false);
 
         }

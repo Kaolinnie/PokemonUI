@@ -42,16 +42,24 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.appTitleLabel = new System.Windows.Forms.Label();
             this.menuTitlePanel = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuTitleLabel = new System.Windows.Forms.Label();
             this.desktopPanel = new System.Windows.Forms.Panel();
             this.types = new System.Windows.Forms.ImageList(this.components);
             this.pokemonImages = new System.Windows.Forms.ImageList(this.components);
             this.itemImages = new System.Windows.Forms.ImageList(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.japaneseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPanel.SuspendLayout();
             this.buttonsPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             this.menuTitlePanel.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -151,21 +159,9 @@
             // menuTitlePanel
             // 
             this.menuTitlePanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.menuTitlePanel.Controls.Add(this.comboBox1);
             this.menuTitlePanel.Controls.Add(this.menuTitleLabel);
             resources.ApplyResources(this.menuTitlePanel, "menuTitlePanel");
             this.menuTitlePanel.Name = "menuTitlePanel";
-            // 
-            // comboBox1
-            // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2")});
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // menuTitleLabel
             // 
@@ -181,9 +177,26 @@
             // 
             // types
             // 
-            this.types.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            resources.ApplyResources(this.types, "types");
+            this.types.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("types.ImageStream")));
             this.types.TransparentColor = System.Drawing.Color.Transparent;
+            this.types.Images.SetKeyName(0, "fairy.gif");
+            this.types.Images.SetKeyName(1, "steel.gif");
+            this.types.Images.SetKeyName(2, "dark.gif");
+            this.types.Images.SetKeyName(3, "dragon.gif");
+            this.types.Images.SetKeyName(4, "ghost.gif");
+            this.types.Images.SetKeyName(5, "rock.gif");
+            this.types.Images.SetKeyName(6, "bug.gif");
+            this.types.Images.SetKeyName(7, "psychic.gif");
+            this.types.Images.SetKeyName(8, "flying.gif");
+            this.types.Images.SetKeyName(9, "ground.gif");
+            this.types.Images.SetKeyName(10, "poison.gif");
+            this.types.Images.SetKeyName(11, "fighting.gif");
+            this.types.Images.SetKeyName(12, "ice.gif");
+            this.types.Images.SetKeyName(13, "grass.gif");
+            this.types.Images.SetKeyName(14, "electric.gif");
+            this.types.Images.SetKeyName(15, "water.gif");
+            this.types.Images.SetKeyName(16, "fire.gif");
+            this.types.Images.SetKeyName(17, "normal.gif");
             // 
             // pokemonImages
             // 
@@ -1392,6 +1405,63 @@
             this.itemImages.Images.SetKeyName(885, "black-apricorn.png");
             this.itemImages.Images.SetKeyName(886, "black-belt.png");
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.languageToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
+            // 
+            // languageToolStripMenuItem
+            // 
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.frenchToolStripMenuItem,
+            this.japaneseToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // frenchToolStripMenuItem
+            // 
+            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
+            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
+            // 
+            // japaneseToolStripMenuItem
+            // 
+            this.japaneseToolStripMenuItem.Name = "japaneseToolStripMenuItem";
+            resources.ApplyResources(this.japaneseToolStripMenuItem, "japaneseToolStripMenuItem");
+            this.japaneseToolStripMenuItem.Click += new System.EventHandler(this.japaneseToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // PokemonUIForm
             // 
             resources.ApplyResources(this, "$this");
@@ -1399,6 +1469,8 @@
             this.Controls.Add(this.desktopPanel);
             this.Controls.Add(this.menuTitlePanel);
             this.Controls.Add(this.menuPanel);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "PokemonUIForm";
             this.Load += new System.EventHandler(this.PokemonUIForm_Load);
             this.menuPanel.ResumeLayout(false);
@@ -1406,7 +1478,10 @@
             this.buttonsPanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
             this.menuTitlePanel.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1427,9 +1502,16 @@
         private System.Windows.Forms.Panel buttonsPanel;
         private System.Windows.Forms.Panel desktopPanel;
         private System.Windows.Forms.ImageList types;
-        private System.Windows.Forms.ComboBox comboBox1;
         internal System.Windows.Forms.ImageList itemImages;
         internal System.Windows.Forms.ImageList pokemonImages;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem japaneseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 

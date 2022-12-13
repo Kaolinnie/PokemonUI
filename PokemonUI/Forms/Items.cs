@@ -27,25 +27,14 @@ namespace PokemonUI.Forms
             {
                 ListViewItem tmp = new ListViewItem();
                 tmp.Text = item.Name;
-                itemsList.Items.Add(item.Name);
+                tmp.ImageKey = $"{item.Name}.png";
+                itemsListView.Items.Add(tmp);
             }
         }
-        private void itemsList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var itemText = itemsList.GetItemText(itemsList.SelectedItem);
-            var image = itemText.Replace('-','_');
-            var item =
-                (from tmp in items
-                where tmp.Name == itemText
-                select tmp).First();
-            Image img = itemImages.Images[image];
 
-            ItemInformation popup = new ItemInformation(item,img);
-            DialogResult dialogresult = popup.ShowDialog();
-            if (dialogresult == DialogResult.OK)
-            {
-                popup.Dispose();
-            }
+        private void itemsListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,20 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Items));
-            this.itemsList = new System.Windows.Forms.ListBox();
             this.itemImages = new System.Windows.Forms.ImageList(this.components);
+            this.itemsListView = new System.Windows.Forms.ListView();
             this.SuspendLayout();
-            // 
-            // itemsList
-            // 
-            this.itemsList.Dock = System.Windows.Forms.DockStyle.Left;
-            this.itemsList.FormattingEnabled = true;
-            this.itemsList.Location = new System.Drawing.Point(0, 0);
-            this.itemsList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.itemsList.Name = "itemsList";
-            this.itemsList.Size = new System.Drawing.Size(274, 461);
-            this.itemsList.TabIndex = 0;
-            this.itemsList.SelectedIndexChanged += new System.EventHandler(this.itemsList_SelectedIndexChanged);
             // 
             // itemImages
             // 
@@ -937,13 +926,26 @@
             this.itemImages.Images.SetKeyName(885, "black-apricorn.png");
             this.itemImages.Images.SetKeyName(886, "black-belt.png");
             // 
+            // itemsListView
+            // 
+            this.itemsListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.itemsListView.HideSelection = false;
+            this.itemsListView.LargeImageList = this.itemImages;
+            this.itemsListView.Location = new System.Drawing.Point(0, 0);
+            this.itemsListView.Name = "itemsListView";
+            this.itemsListView.Size = new System.Drawing.Size(1264, 887);
+            this.itemsListView.TabIndex = 2;
+            this.itemsListView.UseCompatibleStateImageBehavior = false;
+            this.itemsListView.View = System.Windows.Forms.View.Tile;
+            this.itemsListView.SelectedIndexChanged += new System.EventHandler(this.itemsListView_SelectedIndexChanged);
+            // 
             // Items
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 461);
-            this.Controls.Add(this.itemsList);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClientSize = new System.Drawing.Size(1264, 887);
+            this.Controls.Add(this.itemsListView);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Items";
             this.Text = "Items";
             this.Load += new System.EventHandler(this.Items_Load);
@@ -952,7 +954,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.ListBox itemsList;
         internal System.Windows.Forms.ImageList itemImages;
+        private System.Windows.Forms.ListView itemsListView;
     }
 }

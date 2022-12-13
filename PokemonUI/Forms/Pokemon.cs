@@ -23,26 +23,13 @@ namespace PokemonUI.Forms
             pokedex = DataRetriever.pokedex(@"./Json/pokedex.json");
             foreach(var pkmn in pokedex)
             {
-                pokemonList.Items.Add(pkmn.Name);
+                ListViewItem item = new ListViewItem();
+                item.Text = char.ToUpper(pkmn.Name[0]) + pkmn.Name.Substring(1);
+                item.ImageKey = $"{pkmn.Id}.png";
+                pokemonListView.Items.Add(item);
             }
 
         }
-
-        private void pokemonList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var pokemonText = pokemonList.GetItemText(pokemonList.SelectedItem);
-            var pkmn =
-                (from tmp in pokedex
-                 where tmp.Name == pokemonText
-                 select tmp).First();
-            Image img = pokemonImages.Images[$"{pkmn.Id}"];
-
-            PokemonInformation popup = new PokemonInformation(pkmn, img);
-            DialogResult dialogresult = popup.ShowDialog();
-            if (dialogresult == DialogResult.OK)
-            {
-                popup.Dispose();
-            }
-        }
+         
     }
 }
