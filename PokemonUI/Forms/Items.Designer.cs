@@ -932,8 +932,10 @@
             this.itemsListView.HideSelection = false;
             this.itemsListView.LargeImageList = this.itemImages;
             this.itemsListView.Location = new System.Drawing.Point(0, 0);
+            this.itemsListView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.itemsListView.MultiSelect = false;
             this.itemsListView.Name = "itemsListView";
-            this.itemsListView.Size = new System.Drawing.Size(1264, 887);
+            this.itemsListView.Size = new System.Drawing.Size(632, 461);
             this.itemsListView.TabIndex = 2;
             this.itemsListView.UseCompatibleStateImageBehavior = false;
             this.itemsListView.View = System.Windows.Forms.View.Tile;
@@ -941,11 +943,11 @@
             // 
             // Items
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 887);
+            this.ClientSize = new System.Drawing.Size(632, 461);
             this.Controls.Add(this.itemsListView);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Items";
             this.Text = "Items";
             this.Load += new System.EventHandler(this.Items_Load);

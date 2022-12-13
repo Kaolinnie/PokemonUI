@@ -34,7 +34,19 @@ namespace PokemonUI.Forms
 
         private void itemsListView_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try
+            {
+                var itemName = ((ListView)sender).SelectedItems[0].Text;
+                var itemID =
+                    (from tmp in items
+                    where tmp.Name == itemName
+                    select tmp.Id).First();
 
+                MessageBox.Show($"Item Name: {itemName}", $"Item ID: {itemID}", MessageBoxButtons.OK);
+            } catch (Exception)
+            {
+                //MessageBox.Show("Something went wrong...", "Oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

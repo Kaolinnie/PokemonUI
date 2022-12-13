@@ -38,8 +38,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.teamName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.teamDescription = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.membersTable = new System.Windows.Forms.TableLayoutPanel();
             this.member1 = new System.Windows.Forms.PictureBox();
@@ -63,6 +61,9 @@
             this.movesListView = new System.Windows.Forms.ListView();
             this.pokemonImages = new System.Windows.Forms.ImageList(this.components);
             this.itemImages = new System.Windows.Forms.ImageList(this.components);
+            this.movesPanel = new System.Windows.Forms.Panel();
+            this.memberMovesListView = new System.Windows.Forms.ListView();
+            this.types = new System.Windows.Forms.ImageList(this.components);
             this.teamsListPanel.SuspendLayout();
             this.teamMembersPanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -78,15 +79,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.heldItemImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokemonImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokemonPicture)).BeginInit();
+            this.movesPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // teamsListPanel
             // 
-            resources.ApplyResources(this.teamsListPanel, "teamsListPanel");
             this.teamsListPanel.BackColor = System.Drawing.Color.Transparent;
             this.teamsListPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.teamsListPanel.Controls.Add(this.teamSelectButton);
             this.teamsListPanel.Controls.Add(this.newTeamButton);
+            resources.ApplyResources(this.teamsListPanel, "teamsListPanel");
             this.teamsListPanel.Name = "teamsListPanel";
             // 
             // teamSelectButton
@@ -96,8 +98,8 @@
             // 
             // newTeamButton
             // 
-            resources.ApplyResources(this.newTeamButton, "newTeamButton");
             this.newTeamButton.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.newTeamButton, "newTeamButton");
             this.newTeamButton.FlatAppearance.BorderSize = 0;
             this.newTeamButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.newTeamButton.ImageList = this.teamsImages;
@@ -115,41 +117,29 @@
             // 
             // teamMembersPanel
             // 
-            resources.ApplyResources(this.teamMembersPanel, "teamMembersPanel");
             this.teamMembersPanel.Controls.Add(this.panel1);
             this.teamMembersPanel.Controls.Add(this.pokemonDetails);
+            resources.ApplyResources(this.teamMembersPanel, "teamMembersPanel");
             this.teamMembersPanel.Name = "teamMembersPanel";
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.membersTable);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.teamName);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.teamDescription);
             this.panel2.Controls.Add(this.label1);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // teamName
             // 
             resources.ApplyResources(this.teamName, "teamName");
             this.teamName.Name = "teamName";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // teamDescription
-            // 
-            resources.ApplyResources(this.teamDescription, "teamDescription");
-            this.teamDescription.Name = "teamDescription";
             // 
             // label1
             // 
@@ -169,56 +159,63 @@
             // 
             // member1
             // 
-            resources.ApplyResources(this.member1, "member1");
             this.member1.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.member1, "member1");
             this.member1.Name = "member1";
             this.member1.TabStop = false;
+            this.member1.Click += new System.EventHandler(this.member_Click);
             // 
             // member2
             // 
-            resources.ApplyResources(this.member2, "member2");
             this.member2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.member2, "member2");
             this.member2.Name = "member2";
             this.member2.TabStop = false;
+            this.member2.Click += new System.EventHandler(this.member_Click);
             // 
             // member3
             // 
-            resources.ApplyResources(this.member3, "member3");
             this.member3.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.member3, "member3");
             this.member3.Name = "member3";
             this.member3.TabStop = false;
+            this.member3.Click += new System.EventHandler(this.member_Click);
             // 
             // member4
             // 
-            resources.ApplyResources(this.member4, "member4");
             this.member4.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.member4, "member4");
             this.member4.Name = "member4";
             this.member4.TabStop = false;
+            this.member4.Click += new System.EventHandler(this.member_Click);
             // 
             // member5
             // 
-            resources.ApplyResources(this.member5, "member5");
             this.member5.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.member5, "member5");
             this.member5.Name = "member5";
             this.member5.TabStop = false;
+            this.member5.Click += new System.EventHandler(this.member_Click);
             // 
             // member6
             // 
-            resources.ApplyResources(this.member6, "member6");
             this.member6.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.member6, "member6");
             this.member6.Name = "member6";
             this.member6.TabStop = false;
+            this.member6.Click += new System.EventHandler(this.member_Click);
             // 
             // pokemonDetails
             // 
-            resources.ApplyResources(this.pokemonDetails, "pokemonDetails");
             this.pokemonDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pokemonDetails.Controls.Add(this.movesPanel);
             this.pokemonDetails.Controls.Add(this.heldItemLabel);
             this.pokemonDetails.Controls.Add(this.heldItemImage);
             this.pokemonDetails.Controls.Add(this.pokemonImage);
             this.pokemonDetails.Controls.Add(this.type2);
             this.pokemonDetails.Controls.Add(this.type1);
             this.pokemonDetails.Controls.Add(this.pokemonNameLabel);
+            resources.ApplyResources(this.pokemonDetails, "pokemonDetails");
             this.pokemonDetails.Name = "pokemonDetails";
             // 
             // heldItemLabel
@@ -228,16 +225,15 @@
             // 
             // heldItemImage
             // 
-            resources.ApplyResources(this.heldItemImage, "heldItemImage");
             this.heldItemImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.heldItemImage, "heldItemImage");
             this.heldItemImage.Name = "heldItemImage";
             this.heldItemImage.TabStop = false;
-            this.heldItemImage.Click += new System.EventHandler(this.heldItemImage_Click);
             // 
             // pokemonImage
             // 
-            resources.ApplyResources(this.pokemonImage, "pokemonImage");
             this.pokemonImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.pokemonImage, "pokemonImage");
             this.pokemonImage.Name = "pokemonImage";
             this.pokemonImage.TabStop = false;
             // 
@@ -284,8 +280,8 @@
             // 
             // movesListView
             // 
-            resources.ApplyResources(this.movesListView, "movesListView");
             this.movesListView.HideSelection = false;
+            resources.ApplyResources(this.movesListView, "movesListView");
             this.movesListView.Name = "movesListView";
             this.movesListView.UseCompatibleStateImageBehavior = false;
             // 
@@ -2884,6 +2880,45 @@
             this.itemImages.Images.SetKeyName(885, "black-apricorn.png");
             this.itemImages.Images.SetKeyName(886, "black-belt.png");
             // 
+            // movesPanel
+            // 
+            this.movesPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.movesPanel.Controls.Add(this.memberMovesListView);
+            resources.ApplyResources(this.movesPanel, "movesPanel");
+            this.movesPanel.Name = "movesPanel";
+            // 
+            // memberMovesListView
+            // 
+            resources.ApplyResources(this.memberMovesListView, "memberMovesListView");
+            this.memberMovesListView.HideSelection = false;
+            this.memberMovesListView.Name = "memberMovesListView";
+            this.memberMovesListView.SmallImageList = this.types;
+            this.memberMovesListView.UseCompatibleStateImageBehavior = false;
+            this.memberMovesListView.View = System.Windows.Forms.View.SmallIcon;
+            // 
+            // types
+            // 
+            this.types.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("types.ImageStream")));
+            this.types.TransparentColor = System.Drawing.Color.Transparent;
+            this.types.Images.SetKeyName(0, "normal.gif");
+            this.types.Images.SetKeyName(1, "fighting.gif");
+            this.types.Images.SetKeyName(2, "flying.gif");
+            this.types.Images.SetKeyName(3, "poison.gif");
+            this.types.Images.SetKeyName(4, "ground.gif");
+            this.types.Images.SetKeyName(5, "rock.gif");
+            this.types.Images.SetKeyName(6, "bug.gif");
+            this.types.Images.SetKeyName(7, "ghost.gif");
+            this.types.Images.SetKeyName(8, "steel.gif");
+            this.types.Images.SetKeyName(9, "fire.gif");
+            this.types.Images.SetKeyName(10, "water.gif");
+            this.types.Images.SetKeyName(11, "grass.gif");
+            this.types.Images.SetKeyName(12, "electric.gif");
+            this.types.Images.SetKeyName(13, "psychic.gif");
+            this.types.Images.SetKeyName(14, "ice.gif");
+            this.types.Images.SetKeyName(15, "dragon.gif");
+            this.types.Images.SetKeyName(16, "dark.gif");
+            this.types.Images.SetKeyName(17, "fairy.gif");
+            // 
             // Teams
             // 
             resources.ApplyResources(this, "$this");
@@ -2894,7 +2929,6 @@
             this.Load += new System.EventHandler(this.Teams_Load);
             this.teamsListPanel.ResumeLayout(false);
             this.teamMembersPanel.ResumeLayout(false);
-            this.teamMembersPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -2910,6 +2944,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.heldItemImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokemonImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokemonPicture)).EndInit();
+            this.movesPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2927,10 +2962,8 @@
         private System.Windows.Forms.Panel teamSelectButton;
         private System.Windows.Forms.Panel teamMembersPanel;
         private System.Windows.Forms.ListView movesListView;
-        private System.Windows.Forms.RichTextBox teamDescription;
         private System.Windows.Forms.TextBox teamName;
         private System.Windows.Forms.Panel pokemonDetails;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label heldItemLabel;
         private System.Windows.Forms.PictureBox heldItemImage;
@@ -2949,5 +2982,8 @@
         private System.Windows.Forms.PictureBox member5;
         private System.Windows.Forms.PictureBox member6;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel movesPanel;
+        private System.Windows.Forms.ListView memberMovesListView;
+        private System.Windows.Forms.ImageList types;
     }
 }

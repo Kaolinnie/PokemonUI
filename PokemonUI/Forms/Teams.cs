@@ -2,64 +2,96 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TeamDexLibrary;
 using System.Linq;
-
+using System.Drawing;
+using System.IO;
+using Flurl.Http.Configuration;
 
 namespace PokemonUI.Forms
 {
     public partial class Teams : Form
     {
         private List<Team> teamList;
+        private List<Move>  movedex;
+        private List<Pokedex> pokedex;
+        private List<Item> itemdex;
+        private Team activeTeam;
+        private int activeMon;
         public Teams()
         {
             InitializeComponent();
-            SetTeamList();
-        }
-
-        private void SetTeamList()
-        {
-            teamList = DataRetriever.teamdex(@"./Json/team.json");
-        }
-        private void Teams_Load(object sender, EventArgs e)
-        {
-            foreach(var team in teamList)
+            SetLists();
+            if(teamList.Count>0)
             {
-                Button btn = TeamButton();
-                btn.Name=team.Name;
-                teamSelectButton.Controls.Add(btn);
+                activeTeam = teamList[0];
+                activeMon = activeTeam.Members[0];
+                var btn = new Button();
+                btn.Name = activeTeam.Name;
+                ShowTeam(btn,new EventArgs());
             }
         }
 
+        private void SetLists()
+        {
+            var path = "./Json/team.json";
+            var fullPath = Path.GetFullPath(path);
+            var json = File.ReadAllText(fullPath);
+            Console.WriteLine(fullPath);
+            teamList = JsonConvert.DeserializeObject<List<Team>>(json);
+            movedex = DataRetriever.movedex(@"./Json/move.json");
+            pokedex = DataRetriever.pokedex(@"./Json/pokedex.json");
+            itemdex = DataRetriever.itemdex(@"./Json/item.json");
+        }
+        private void Teams_Load(object sender, EventArgs e)
+        {
+            reloadTeams();
+        }
 
+        private void reloadTeams()
+        {
+            teamSelectButton.Controls.Clear();
+            foreach (var team in teamList)
+            {
+                Button btn = TeamButton();
+                btn.Name = team.Name;
+                teamSelectButton.Controls.Add(btn);
+            }
+        }
         public void newTeamButton_Click(object sender, EventArgs e) 
         {
             NewTeam();
         }
 
-        private Button NewTeam()
+        private void NewTeam()
         {
-            string value = "";
-            
-            if(InputBox("Create your team","Team Name: ",ref value)==DialogResult.OK)
+            int[] indices = new int[6];
+            Random ran = new Random();
+            for (var i = 0; i < 6; i++)
             {
-                Button btn = TeamButton();
-
-                btn.Name = value;
-                teamSelectButton.Controls.Add(btn);
-
-                Team team = new Team()
-                {
-                    Name = value
-                };
-                teamList.Add(team);
-
-                return btn;
+                indices[i] = ran.Next(0, pokedex.Count);
             }
-            return null;
+            int[] moves = new int[24];
+            for (var i = 0; i < 24; i++)
+            {
+                moves[i] = ran.Next(0, movedex.Count);
+            }
+            int[] items = new int[6];
+            for (var i = 0; i < 6; i++)
+            {
+                items[i] = ran.Next(0, itemdex.Count);
+            }
+
+            Team newTeam = new Team();
+            newTeam.Name = $"randomTeam{teamList.Count + 1}";
+            newTeam.Description = "A randomised team";
+            newTeam.Members = indices;
+            newTeam.Moves = moves;
+            newTeam.HeldItem = items;
+            teamList.Add(newTeam);
+            saveTeams();
+            reloadTeams();
         }
         private Button TeamButton()
         {
@@ -79,21 +111,27 @@ namespace PokemonUI.Forms
 
         private void ShowTeam(object sender, EventArgs e)
         {
+            var panel = teamSelectButton;
+            foreach (var control in panel.Controls)
+            {
+                ((Button)control).BackColor = DefaultBackColor;
+            }
             Button btn = (Button)sender;
+            btn.BackColor = System.Drawing.Color.LightGray;
             var team =
                 (from tmp in teamList
                 where tmp.Name == btn.Name
                 select tmp).First();
 
+            activeTeam = team;
             teamName.Text = team.Name;
-            teamDescription.Text = team.Description;
             var boxes = membersTable.Controls;
 
             for (int i=0;i<team.Members.Length;i++)
             {
-                ((PictureBox)boxes[i]).Image = pokemonImages.Images[$"{team.Members[i]}"];
+                var tmpImg = pokemonImages.Images[$"{team.Members[i]}.png"];
+                ((PictureBox)boxes[i]).Image = tmpImg;
             }
-            member1.Image = pokemonImages.Images["762"];
 
         }
         private DialogResult InputBox(string title, string promptText, ref string value)
@@ -134,14 +172,66 @@ namespace PokemonUI.Forms
             return dialogResult;
         }
 
-        private void pokemon1_Click(object sender, EventArgs e)
-        {
 
+        private void member_Click(object sender, EventArgs e)
+        {
+            clearMemberDetails();
+            try
+            {
+
+                var index = membersTable.Controls.IndexOf((PictureBox)sender);
+                if (index >= activeTeam.Members.Length) return;
+
+                activeMon = index;
+                foreach (var control in membersTable.Controls)
+                {
+                    ((PictureBox)control).BackColor = DefaultBackColor;
+                }
+                var box = (PictureBox)sender;
+                box.BackColor = Color.LightGray;
+            
+                var teamMember = activeTeam.Members[index];
+
+                var pkmn = pokedex[teamMember];
+                pokemonImage.Image = pokemonImages.Images[$"{teamMember}.png"];
+
+                var item =
+                    (from tmp in itemdex
+                    where tmp.Id == activeTeam.HeldItem[index]
+                    select tmp.Name).First();
+                heldItemImage.Image = itemImages.Images[$"{item}.png"];
+                heldItemLabel.Text = item;
+
+                for(int i = 0; i < 4; i++)
+                {
+                    ListViewItem move = new ListViewItem();
+                    var mv =
+                        (from tmp in movedex
+                        where tmp.Id == activeTeam.Moves[(index * 4) + i]
+                        select tmp).First();
+                    move.Text = mv.Name;
+                    move.ImageKey = $"{mv.Type}.gif";
+                    memberMovesListView.Items.Add(move);
+                }
+            } catch (Exception)
+            {
+                //no error handling necessary
+            }
         }
-
-        private void heldItemImage_Click(object sender, EventArgs e)
+        private void clearMemberDetails()
         {
-
+            memberMovesListView.Items.Clear();
+            heldItemImage.Image = null;
+            pokemonImage.Image = null;
+            heldItemLabel.Text = "null";
+            pokemonNameLabel.Text = "null";
+        }
+        private void saveTeams()
+        {
+            var json = JsonConvert.SerializeObject(teamList);
+            var path = "./Json/team.json";
+            var fullPath = Path.GetFullPath(path);
+            File.WriteAllText(fullPath,json);
         }
     }
 }

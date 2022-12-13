@@ -151,18 +151,7 @@ namespace PokemonUI
 
         private void PokemonUIForm_Load(object sender, EventArgs e)
         {
-            var resourceSet = Properties.Resources.ResourceManager.GetResourceSet(CultureInfo.InvariantCulture, true, false);
-            if (resourceSet != null)
-            {
-                foreach (DictionaryEntry entry in resourceSet)
-                {
-                    var value = entry.Value as Bitmap; //only get images
-                    if (value != null)
-                    {
-                        pokemonImages.Images.Add((string)entry.Key, value);
-                    }
-                }
-            }
+
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
@@ -182,18 +171,25 @@ namespace PokemonUI
         private void japaneseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var changeLanguage = new ChangeLanguage();
-            changeLanguage.UpdateConfig("language", "jp");
+            changeLanguage.UpdateConfig("language", "ja");
             Application.Restart();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Created by Kaolin and Eris V1 | 2022-12-12", "About the application", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void spanishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language", "es");
+            Application.Restart();
         }
     }
 }

@@ -128,18 +128,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeLanguage.cs" />
-    <Compile Include="Forms\CreateTeamPopup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\CreateTeamPopup.Designer.cs">
-      <DependentUpon>CreateTeamPopup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\ItemInformation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ItemInformation.Designer.cs">
-      <DependentUpon>ItemInformation.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Items.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,12 +145,6 @@
     </Compile>
     <Compile Include="Forms\Pokemon.Designer.cs">
       <DependentUpon>Pokemon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\PokemonInformation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\PokemonInformation.Designer.cs">
-      <DependentUpon>PokemonInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Settings.cs">
       <SubType>Form</SubType>
@@ -190,12 +172,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\CreateTeamPopup.resx">
-      <DependentUpon>CreateTeamPopup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ItemInformation.resx">
-      <DependentUpon>ItemInformation.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Items.resx">
       <DependentUpon>Items.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,9 +180,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Pokemon.resx">
       <DependentUpon>Pokemon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PokemonInformation.resx">
-      <DependentUpon>PokemonInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Teams.fr-CA.resx">
       <DependentUpon>Teams.cs</DependentUpon>
@@ -221,6 +194,9 @@
       <DependentUpon>PokemonUIForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PokemonUIForm.en.resx">
+      <DependentUpon>PokemonUIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokemonUIForm.es.resx">
       <DependentUpon>PokemonUIForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PokemonUIForm.fr-CA.resx">
@@ -250,8 +226,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Json\team.json">
-      <SubType>Form</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
     <None Include="Json\pokedex.json">

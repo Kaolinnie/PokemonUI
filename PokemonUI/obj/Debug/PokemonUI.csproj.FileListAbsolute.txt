@@ -187,10 +187,7 @@ C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\obj\Debug\en\PokemonUI.resourc
 C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\bin\Debug\ja\PokemonUI.resources.dll
 C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.ja.resources
 C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\obj\Debug\ja\PokemonUI.resources.dll
-C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.Forms.CreateTeamPopup.resources
-C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.Forms.ItemInformation.resources
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.Forms.Items.resources
-C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.Forms.PokemonInformation.resources
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.aa.resources
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.en.resources
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.fr.resources
@@ -198,7 +195,6 @@ C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.PokemonUIFo
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Json\ability.json
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Json\item.json
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Json\move.json
-C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Json\team.json
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Json\pokedex.json
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Json\type.json
 C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\aa\PokemonUI.resources.dll
@@ -218,3 +214,12 @@ C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\bin\Debug\fr-CA\PokemonUI.reso
 C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\obj\Debug\fr-CA\PokemonUI.resources.dll
 C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Teams.fr-CA.resources
 C:\Users\kaoli\Desktop\Github\PokemonUI\PokemonUI\obj\Debug\PokemonUI.Forms.Moves.resources
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.Forms.Moves.resources
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.Forms.Teams.fr-CA.resources
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.fr-CA.resources
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\fr-CA\PokemonUI.resources.dll
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\fr-CA\PokemonUI.resources.dll
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\es\PokemonUI.resources.dll
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\PokemonUI.PokemonUIForm.es.resources
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\obj\Debug\es\PokemonUI.resources.dll
+C:\Users\Kaolin\Desktop\Github\TeamDex\PokemonUI\bin\Debug\Json\team.json

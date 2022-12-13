@@ -26,10 +26,28 @@ namespace PokemonUI.Forms
                 ListViewItem item = new ListViewItem();
                 item.Text = char.ToUpper(pkmn.Name[0]) + pkmn.Name.Substring(1);
                 item.ImageKey = $"{pkmn.Id}.png";
+                
                 pokemonListView.Items.Add(item);
             }
 
         }
-         
+
+        private void pokemonListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var pkmnName = ((ListView)sender).SelectedItems[0].Text;
+                var pkmnId =
+                    (from tmp in pokedex
+                     where tmp.Name == pkmnName.ToLower()
+                     select tmp).First();
+
+                MessageBox.Show($"Pokemon Name: {pkmnName}", $"Pokemon ID: {pkmnId}", MessageBoxButtons.OK);
+            }
+            catch (Exception)
+            {
+                //MessageBox.Show("Something went wrong...", "Oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
