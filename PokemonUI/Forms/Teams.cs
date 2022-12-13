@@ -192,8 +192,9 @@ namespace PokemonUI.Forms
             
                 var teamMember = activeTeam.Members[index];
 
-                var pkmn = pokedex[teamMember];
+                var pkmn = pokedex[teamMember-1];
                 pokemonImage.Image = pokemonImages.Images[$"{teamMember}.png"];
+                pokemonNameLabel.Text = pkmn.Name;
 
                 var item =
                     (from tmp in itemdex
